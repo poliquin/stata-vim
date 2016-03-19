@@ -20,6 +20,27 @@ endif
 
 syntax case match
 
+" Operators
+syn match stataOperator "+"
+syn match stataOperator "-"
+syn match stataOperator "*"
+syn match stataOperator "/"
+syn match stataOperator "="
+syn match stataOperator "\^"
+" logical operators
+syn match stataOperator "\!"
+syn match stataOperator "\~"
+syn match stataOperator "&"
+syn match stataOperator "|"
+" relational operators
+syn match stataOperator ">"
+syn match stataOperator "<"
+" matrix operators
+syn match stataMatrixOperator "#"
+syn match stataMatrixOperator "'"
+syn match stataMatrixOperator "," contained
+syn match stataMatrixOperator "\\"
+
 " comments that deserve special highlighting
 syn keyword stataTodo TODO FIXME XXX contained
 
@@ -614,27 +635,6 @@ syn region stataFunc matchgroup=Function start=/\<nullmat(/ end=/)/ contains=@st
 syn region stataFunc matchgroup=Function start=/\<sweep(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<vec(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<vecdiag(/ end=/)/ contains=@stataFuncGroup
-
-" Operators
-syn match stataOperator "+"
-syn match stataOperator "-"
-syn match stataOperator "*"
-syn match stataOperator "/"
-syn match stataOperator "="
-syn match stataOperator "\^"
-" logical operators
-syn match stataOperator "\!"
-syn match stataOperator "\~"
-syn match stataOperator "&"
-syn match stataOperator "|"
-" relational operators
-syn match stataOperator ">"
-syn match stataOperator "<"
-" matrix operators
-syn match stataMatrixOperator "#"
-syn match stataMatrixOperator "'"
-syn match stataMatrixOperator "," contained
-syn match stataMatrixOperator "\\"
 
 " Errors to catch
 " taken from $VIMRUNTIME/syntax/c.vim
