@@ -55,8 +55,8 @@ syn match   stataType /strL\?[0-9]*/
 
 " Literals
 syn match  stataQuote   /"/
-syn region stataEString matchgroup=Nothing start=/`"/ end=/"'/ oneline contains=stataQuote,stataEString
-syn region stataString  matchgroup=Nothing start=/"/  end=/"/  oneline
+syn region stataString  start=/"/  end=/"/  oneline
+syn region stataEString matchgroup=Nothing start=/`"/ end=/"'/ oneline contains=stataQuote,stataEString,stataString
 
 
 " Functions
