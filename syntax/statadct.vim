@@ -7,59 +7,71 @@
 " Log:
 " 2015-09-07    Created file
 
-
-"if version < 600
-"    syntax clear
-"elseif exists("b:current_syntax")
-"    finish
-"endif
+" Preamble {{{
+" -----------------------------------------------------------------------------
+if version < 600
+    syntax clear
+elseif exists("b:current_syntax")
+    finish
+endif
 
 syntax case match
+" }}}
 
 
-" Notes
+" Comments {{{
+" -----------------------------------------------------------------------------
+" words that deserve special highlighting
 syn keyword stataTodo TODO FIXME XXX contained
-
-
-" Comments
-syn region stataStarComment  start=/\s*\*/ end=/$/   contains=stataComment,stataTodo oneline
-syn region stataSlashComment start="\s//"  end=/$/   contains=stataComment,stataTodo oneline
-syn region stataSlashComment start="^//"   end=/$/   contains=stataComment,stataTodo oneline
+" single line
+syn region stataStarComment  start=/\s*\*/ end=/$/ contains=stataComment,stataTodo oneline
+syn region stataSlashComment start="\s//"  end=/$/ contains=stataComment,stataTodo oneline
+syn region stataSlashComment start="^//"   end=/$/ contains=stataComment,stataTodo oneline
 " multi-line
-syn region stataComment      start="/\*"   end="\*/" contains=stataComment,stataTodo
+syn region stataComment start="/\*" end="\*/" contains=stataComment,stataTodo
+" }}}
 
 
-" Variable formats
+" Variable Formats {{{
+" -----------------------------------------------------------------------------
 " numbers
 syn match stataFormat /%\(\|\d\+\|\d\+\.\d\+\)[efg]/
 " strings
 syn match stataFormat /%\(\|\d\+\)[sS]/
+" }}}
 
 
-" Commands
+" Commands {{{
+" -----------------------------------------------------------------------------
 syn keyword stataCommand clear
 syn keyword stataCommand dictionary
 syn keyword stataCommand infile
 syn keyword stataCommand infix
 syn keyword stataCommand using
+" }}}
 
 
-" Variable Types
+" Variable Types {{{
+" -----------------------------------------------------------------------------
 syn keyword stataType byte
 syn keyword stataType int
 syn keyword stataType long
 syn keyword stataType float
 syn keyword stataType double
 syn match   stataType /strL\?[0-9]*/
+" }}}
 
 
-" Literals
-syn match  stataQuote   /"/
-syn region stataString  start=/"/  end=/"/  oneline
+" Literals {{{
+" -----------------------------------------------------------------------------
+syn match stataQuote /"/
+syn region stataString start=/"/ end=/"/ oneline
 syn region stataEString matchgroup=Nothing start=/`"/ end=/"'/ oneline contains=stataQuote,stataEString,stataString
+" }}}
 
 
-" Functions
+" Functions {{{
+" -----------------------------------------------------------------------------
 syn match  stataInt /\d\+/ contained
 syn region stataFunc matchgroup=Function start=/\<_lrecl(/ end=/)/ contains=stataInt
 syn region stataFunc matchgroup=Function start=/\<_firstlineoffile(/ end=/)/ contains=stataInt
@@ -69,16 +81,21 @@ syn region stataFunc matchgroup=Function start=/\<_line(/ end=/)/ contains=stata
 syn region stataFunc matchgroup=Function start=/\<_newline(/ end=/)/ contains=stataInt
 syn region stataFunc matchgroup=Function start=/\<_column(/ end=/)/ contains=stataInt
 syn region stataFunc matchgroup=Function start=/\<_skip(/ end=/)/ contains=stataInt
+" }}}
 
 
-" Bracket Region (not currently used)
+" Bracket Region {{{
+" -----------------------------------------------------------------------------
+" (not currently used)
 syn region stataBracket start=/{/ end=/{/ contains=ALLBUT,stataInt
+" }}}
 
 
-"TODO: Errors to Catch
+" TODO: Errors to Catch
 
 
-" Highlight Groups
+" Highlight Groups {{{
+" -----------------------------------------------------------------------------
 hi def link stataEString       stataString
 hi def link stataSlashComment  stataComment
 hi def link stataStarComment   stataComment
@@ -92,5 +109,7 @@ hi def link stataFormat        SpecialChar
 hi def link stataString        String
 hi def link stataInt           Number
 hi def link stataTodo          Todo
+" }}}
+
 
 let b:current_syntax = "statadct"
