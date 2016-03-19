@@ -367,6 +367,50 @@ syn cluster stataParenGroup contains=stataParenError,stataBracketError,stataBrac
 
 " Built-in Functions {{{
 " -----------------------------------------------------------------------------
+" egen functions {{{
+" TODO: not all functions accept everything in stataFuncGroup as arguments
+syn region stataFunc matchgroup=Function start=/\<anycount(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<anymatch(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<anyvalue(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<concat(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<count(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<cut(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<diff(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ends(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<fill(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<group(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<iqr(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<kurt(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<mad(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<max(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<mdev(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<mean(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<median(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<min(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<mode(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<mtr(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<pc(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<pctile(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rank(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowfirst(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowlast(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowmax(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowmean(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowmedian(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowmin(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowmiss(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rownonmiss(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowpctile(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowsd(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rowtotal(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<sd(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<seq(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<skew(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<std(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<tag(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<total(/ end=/)/ contains=@stataFuncGroup
+" }}}
+
 " math {{{
 syn region stataFunc matchgroup=Function start=/\<abs(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<acos(/ end=/)/ contains=@stataFuncGroup
