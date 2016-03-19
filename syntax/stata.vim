@@ -47,6 +47,17 @@ syn match stataMatrixOperator "\\"
 " }}}
 
 
+" Variable Types {{{
+" -----------------------------------------------------------------------------
+syn keyword stataType byte
+syn keyword stataType int
+syn keyword stataType long
+syn keyword stataType float
+syn keyword stataType double
+syn match   stataType /\<strL\?[0-9]*\>/
+" }}}
+
+
 " Comments {{{
 " -----------------------------------------------------------------------------
 " words that deserve special highlighting
@@ -739,6 +750,7 @@ hi def link stataFunc           None
 hi def link stataMacro          Define
 hi def link stataRepeat         Repeat
 hi def link stataOperator       Operator
+hi def link stataType           Type
 hi def link stataSpecial        SpecialChar
 hi def link stataString         String
 hi def link stataNumber         Number
