@@ -36,10 +36,6 @@ syn match stataFormat /%\(\|\d\+\|\d\+\.\d\+\)[efg]/
 syn match stataFormat /%\(\|\d\+\)[sS]/
 
 
-" Valid Variable Names (not currently used)
-syn match stataVariable /[a-zA-Z][a-zA-Z_0-9]\{,31}/
-
-
 " Commands
 syn keyword stataCommand clear
 syn keyword stataCommand dictionary
