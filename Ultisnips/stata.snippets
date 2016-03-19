@@ -1,0 +1,281 @@
+
+priority -50
+
+
+# basic setup for do and ado files, programs {{{
+# ----------------------------------------------------------------------------
+snippet dofile "Set up a new do file" b
+* ${1:A Stata script.}
+
+set more ${2:off}
+set seed ${3:8675309}
+${4:clear all}
+
+$0
+
+exit
+endsnippet
+
+snippet adofile "Set up a new ado file" b
+*! version ${1:0.1.0} `!v strftime("%d%b%Y")`
+*
+*  ${2:This command...}
+
+program define ${3:mycmd}${4:, ${5:sortpreserve}}
+	version ${6:14}
+	syntax ${7:varlist}${8:, []}
+
+	$0
+end
+endsnippet
+
+snippet prog "Create program" b
+capture program drop $1
+program define $1${2:, ${3:sortpreserve}}
+	*! $4
+	version ${5:14}
+	syntax ${6:varlist}${7:, []}
+
+	$0
+end
+endsnippet
+# }}}
+
+
+# control flow {{{
+# ----------------------------------------------------------------------------
+snippet if "if"
+if ${1:_rc} \{
+	$0
+\}
+endsnippet
+
+snippet eif "else-if"
+else if $1 \{
+	$0
+\}
+endsnippet
+
+snippet ife "if-else"
+if ${1:_rc} \{
+	$0
+\}
+${2:else \{
+
+\}}
+endsnippet
+
+snippet while "while"
+while $1 \{
+	$0
+\}
+endsnippet
+
+snippet for "foreach"
+foreach ${1:v} of ${2:varlist ${3:_all}} \{
+	$0
+\}
+endsnippet
+
+snippet forv "forvalues"
+forvalues ${1:i = ${2:0/$3}} \{
+	$0
+\}
+endsnippet
+# }}}
+
+
+# reading and writing commands {{{
+# ----------------------------------------------------------------------------
+snippet use "load a dataset" b
+use "$1.dta"${2:, clear}
+endsnippet
+
+snippet ins "insheet using" b
+insheet using "$1.csv"${2:, clear comma names}
+endsnippet
+
+snippet ixls "import excel" b
+import excel "$1.xlsx", ${2:firstrow clear}
+endsnippet
+
+snippet save "save a dataset" b
+qui compress
+la data "$1"
+save "$2.dta"${3:, replace}
+endsnippet
+
+snippet out "outsheet using" b
+outsheet using "$1.csv"${2:, comma${3: replace}}
+endsnippet
+
+snippet exls "export excel" b
+export excel "$1.xlsx", ${2:sheet($3) ${4:sheetmod} firstrow(${5:var})}
+endsnippet
+
+snippet tempf "Declare and save a temporary file" b
+tempfile $1
+save \`$1'
+endsnippet
+
+snippet app "append dataset" b
+append using "$1.dta"${2:, nolabel nonotes${3: force}}
+endsnippet
+
+snippet merge "merge datasets" b
+merge ${1:1:1} $2 using "$3.dta"${4:, ${5:update}}
+endsnippet
+
+snippet joinby "join datasets" b
+joinby $1 using "$2.dta"${3:, unmatched(${4:master})}
+endsnippet
+# }}}
+
+
+# data management commands {{{
+# ----------------------------------------------------------------------------
+snippet g "generate" b
+gen ${1:double} $2 = $3${4: if $5}
+endsnippet
+
+snippet eg "egenerate" b
+egen ${1:double} $2 = $3${4:, by($5)}
+endsnippet
+
+snippet bys "bysort generate" b
+bys $1${2: ($3)}: ${4:gen long ${5:obs} = ${6:_n}}
+endsnippet
+
+snippet col "collapse" b
+collapse (${1:mean}) ${2:varlist}${3:, by($4)}${5: fast}
+endsnippet
+
+snippet tabstat "tabstat" b
+tabstat ${1:varlist}, ${2:by($3)} stats(${4:mean sd p10 p50 p90 n})
+endsnippet
+
+snippet sum "summarize"
+sum ${1:varlist}${2:, detail}
+endsnippet
+
+snippet df "drop if" b
+drop if ${1:mi($2)}
+endsnippet
+
+snippet kf "keep if" b
+keep if ${1:!mi($2)}
+endsnippet
+
+snippet ren "rename" b
+rename ($1) ($2)
+endsnippet
+
+snippet rep "replace" b
+replace $1 = $2${3: if $4}
+endsnippet
+
+snippet lad "label define" b
+la def $1 ${2:0} "$3"
+endsnippet
+
+snippet lav "label var" b
+la var $1 "$2"
+endsnippet
+
+snippet di "display" b
+di as ${1:result} "$2"
+endsnippet
+
+snippet li "list" b
+list ${1:varlist}${2: if $3}${4:, ${5:sepby($6)}${7: str(${8:30})}${9: noobs}}
+endsnippet
+
+snippet reshape "reshape" b
+reshape ${1:long} ${2:stub}, i($3) j($4)${5: string}
+endsnippet
+
+snippet pre "preserve" b
+preserve
+	$1
+restore
+endsnippet
+
+snippet tos "tostring" b
+tostring $1, ${2:replace}
+endsnippet
+
+snippet des "destring" b
+destring $1, ${2:replace}
+endsnippet
+
+snippet date "date" b
+gen long ${1:dt} = date($2, "${3:DMY"})
+format $1 %td
+endsnippet
+
+snippet confirm "capture confirm" b
+capture confirm ${1:string variable $2}
+if !_rc {
+	$0
+}
+endsnippet
+
+snippet qui "quietly" b
+quietly {
+	$0
+}
+endsnippet
+
+snippet boot "bootstrap sampling and estimation" b
+bootstrap ${1:mean=r(mean)}, reps(${2:1000})${3: saving("$4.dta")}: ${5:sum $6}
+endsnippet
+# }}}
+
+
+# linear regression commands {{{
+# ----------------------------------------------------------------------------
+snippet reg "reg command"
+reg ${1:varlist}${2:, robust}
+endsnippet
+
+snippet xtreg "xtreg command"
+xtreg ${1:varlist}, ${2:fe}${3: vce(cluster $4)}
+endsnippet
+
+snippet areg "areg command"
+areg ${1:varlist}, absorb($2) vce(cluster $2)
+endsnippet
+
+snippet iv "ivregress command"
+ivregress ${1:2sls} ${2:dv exo} (${3:endo} = ${4:inst}), ${5:first}${6: vce(cluster $7)}
+endsnippet
+
+snippet sto "eststo"
+eststo $1, title("$2")
+endsnippet
+# }}}
+
+
+# graphing commands {{{
+# ----------------------------------------------------------------------------
+snippet tw "twoway" b
+twoway ${1:scatter} ${2:varlist}, title("$3")  /*
+	*/ xlab($4, size(vsmall)) xtitle("$5", size(small))  /*
+	*/ ylab($6, size(vsmall)) ytitle("$7", size(small))  /*
+	*/ legend($8)
+${9:graph export "$10.pdf", replace}
+endsnippet
+# }}}
+
+
+# handy extras {{{
+# ----------------------------------------------------------------------------
+snippet // "Comment representing code section" b
+// $1 \{\{\{
+// ----------------------------------------------------------------------------
+$0
+// \}\}\}
+endsnippet
+# }}}
+
+# vim: foldmethod=marker
