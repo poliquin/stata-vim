@@ -615,6 +615,18 @@ syn region stataFunc matchgroup=Function start=/\<sweep(/ end=/)/ contains=@stat
 syn region stataFunc matchgroup=Function start=/\<vec(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<vecdiag(/ end=/)/ contains=@stataFuncGroup
 
+" Operators
+syn match stataOperator "+"
+syn match stataOperator "-"
+syn match stataOperator "*"
+syn match stataOperator "/"
+syn match stataOperator "="
+" matrix operators
+syn match stataMatrixOperator "#"
+syn match stataMatrixOperator "'"
+syn match stataMatrixOperator "," contained
+syn match stataMatrixOperator "\\"
+
 " Errors to catch
 " taken from $VIMRUNTIME/syntax/c.vim
 " catch errors caused by wrong parenthesis, braces and brackets
@@ -641,6 +653,7 @@ hi def link stataLocal		stataMacro
 hi def link stataParenError	stataError
 hi def link stataSlashComment	stataComment
 hi def link stataStarComment	stataComment
+hi def link stataMatrixOperator	stataOperator
 
 hi def link stataCommand	Define
 hi def link stataComment	Comment
@@ -649,6 +662,7 @@ hi def link stataError		Error
 hi def link stataFunc		None
 hi def link stataMacro		Define
 hi def link stataRepeat		Repeat
+hi def link stataOperator	Operator
 hi def link stataSpecial	SpecialChar
 hi def link stataString		String
 hi def link stataTodo           Todo
