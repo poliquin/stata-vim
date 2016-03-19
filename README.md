@@ -15,6 +15,40 @@ My goal is to be compatible with the latest version of Stata, which is
 currently Stata 14.
 
 
+## Installation
+
+### [vim-plug](https://github.com/junegunn/vim-plug)
+
+Include the following in your `.vimrc` (vim) or `init.vim` (neovim):
+
+```VimL
+call plug#begin()
+    Plug 'poliquin/stata-vim'
+call plug#end()
+```
+
+
+### [Vundle](https://github.com/VundleVim/Vundle.vim)
+
+Include the following in your `.vimrc` (vim) or `init.vim` (neovim):
+
+```VimL
+call vundle#begin()
+    Plugin 'poliquin/stata-vim'
+call vundle#end()
+```
+
+
+### [Pathogen](https://github.com/tpope/vim-pathogen)
+
+Clone the repo to your `bundles/` directory:
+
+```bash
+cd ~/.vim/bundle
+git clone git://github.com/poliquin/stata-vim.git
+```
+
+
 ## Credits
 
 * The main syntax file is mostly the work of [Jeff Pitblado](https://github.com/jpitblado/vim-stata).
