@@ -635,6 +635,21 @@ syn region stataFunc matchgroup=Function start=/\<sweep(/ end=/)/ contains=@stat
 syn region stataFunc matchgroup=Function start=/\<vec(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<vecdiag(/ end=/)/ contains=@stataFuncGroup
 
+" Numbers
+" (patterns from github.com/zizhongyan/stata-vim-syntax)
+syn match stataNumber    "\<\d\>"        display
+syn match stataNumber    "\<[1-9]\d\+\>" display
+syn match stataNumber    "\<\d\+[jJ]\>"  display
+syn match stataFloat     "\.\d\+\%([eE][+-]\=\d\+\)\=[jJ]\=\>"    display
+syn match stataFloat     "\<\d\+[eE][+-]\=\d\+[jJ]\=\>"           display
+syn match stataFloat     "\<\d\+\.\d*\%([eE][+-]\=\d\+\)\=[jJ]\=" display
+syn match stataBinNumber "\<0[bB][01]\+[lL]\=\>" display
+syn match stataBinNumber "\<0[bB][01]\+\>"       display
+syn match stataHexNumber "\<0[xX]\x\+[lL]\=\>"   display
+syn match stataHexNumber "\<0[xX]\x\+\>"         display
+syn match stataOctNumber "\<0[oO]\o\+[lL]\=\>"   display
+syn match stataOctNumber "\<0[oO]\o\+\>"         display
+
 " Errors to catch
 " taken from $VIMRUNTIME/syntax/c.vim
 " catch errors caused by wrong parenthesis, braces and brackets
@@ -662,6 +677,9 @@ hi def link stataParenError	stataError
 hi def link stataSlashComment	stataComment
 hi def link stataStarComment	stataComment
 hi def link stataMatrixOperator	stataOperator
+hi def link stataHexNumber      stataNumber
+hi def link stataOctNumber      stataNumber
+hi def link stataBinNumber      stataNumber
 
 hi def link stataCommand	Define
 hi def link stataComment	Comment
@@ -673,6 +691,8 @@ hi def link stataRepeat		Repeat
 hi def link stataOperator	Operator
 hi def link stataSpecial	SpecialChar
 hi def link stataString		String
+hi def link stataNumber         Number
+hi def link stataFloat          Float
 hi def link stataTodo           Todo
 
 let b:current_syntax = "stata"
