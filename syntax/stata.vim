@@ -621,6 +621,15 @@ syn match stataOperator "-"
 syn match stataOperator "*"
 syn match stataOperator "/"
 syn match stataOperator "="
+syn match stataOperator "\^"
+" logical operators
+syn match stataOperator "\!"
+syn match stataOperator "\~"
+syn match stataOperator "&"
+syn match stataOperator "|"
+" relational operators
+syn match stataOperator ">"
+syn match stataOperator "<"
 " matrix operators
 syn match stataMatrixOperator "#"
 syn match stataMatrixOperator "'"
