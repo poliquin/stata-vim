@@ -19,3 +19,4 @@ currently Stata 14.
 
 * The main syntax file is mostly the work of [Jeff Pitblado](https://github.com/jpitblado/vim-stata).
 * The SMCL syntax file is entirely from [Jeff Pitblado](https://github.com/jpitblado/vim-stata).
+* Number highlighting group from [Zizhong Yan](https://github.com/zizhongyan/stata-vim-syntax)
