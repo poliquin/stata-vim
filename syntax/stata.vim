@@ -714,33 +714,33 @@ syn match  stataErrInBrace    contained /[)\]]/
 
 " Highlight Groups {{{
 " -----------------------------------------------------------------------------
-hi def link stataBraceError	stataError
-hi def link stataBracketError	stataError
-hi def link stataErrInBrace	stataError
-hi def link stataErrInBracket	stataError
-hi def link stataErrInParen	stataError
-hi def link stataEString	stataString
-hi def link stataFormat		stataSpecial
-hi def link stataGlobal		stataMacro
-hi def link stataLocal		stataMacro
-hi def link stataParenError	stataError
-hi def link stataSlashComment	stataComment
-hi def link stataStarComment	stataComment
-hi def link stataMatrixOperator	stataOperator
+hi def link stataBraceError     stataError
+hi def link stataBracketError   stataError
+hi def link stataErrInBrace     stataError
+hi def link stataErrInBracket   stataError
+hi def link stataErrInParen     stataError
+hi def link stataEString        stataString
+hi def link stataFormat         stataSpecial
+hi def link stataGlobal         stataMacro
+hi def link stataLocal          stataMacro
+hi def link stataParenError     stataError
+hi def link stataSlashComment   stataComment
+hi def link stataStarComment    stataComment
+hi def link stataMatrixOperator stataOperator
 hi def link stataHexNumber      stataNumber
 hi def link stataOctNumber      stataNumber
 hi def link stataBinNumber      stataNumber
 
-hi def link stataCommand	Define
-hi def link stataComment	Comment
-hi def link stataConditional	Conditional
-hi def link stataError		Error
-hi def link stataFunc		None
-hi def link stataMacro		Define
-hi def link stataRepeat		Repeat
-hi def link stataOperator	Operator
-hi def link stataSpecial	SpecialChar
-hi def link stataString		String
+hi def link stataCommand        Define
+hi def link stataComment        Comment
+hi def link stataConditional    Conditional
+hi def link stataError          Error
+hi def link stataFunc           None
+hi def link stataMacro          Define
+hi def link stataRepeat         Repeat
+hi def link stataOperator       Operator
+hi def link stataSpecial        SpecialChar
+hi def link stataString         String
 hi def link stataNumber         Number
 hi def link stataFloat          Float
 hi def link stataTodo           Todo
