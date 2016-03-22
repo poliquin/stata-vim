@@ -555,7 +555,9 @@ syn region stataFunc matchgroup=Function start=/\<rweibullph(/ end=/)/ contains=
 
 " strings {{{
 syn region stataFunc matchgroup=Function start=/\<abbrev(/ end=/)/ contains=@stataFuncGroup
-syn region stataFunc matchgroup=Function start=/\<hchar(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<char(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<collatorlocale(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<collatorversion(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<indexnot(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<itrim(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<length(/ end=/)/ contains=@stataFuncGroup
@@ -589,9 +591,48 @@ syn region stataFunc matchgroup=Function start=/\<strupper(/ end=/)/ contains=@s
 syn region stataFunc matchgroup=Function start=/\<subinstr(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<subinword(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<substr(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<tobytes(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<trim(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<uchar(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<udstrlen(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<udsubstr(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<uisdigit(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<uisletter(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrcompare(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrcompareex(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrpos(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrrpos(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrfix(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrfrom(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrinvalidcnt(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrleft(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrlen(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrlower(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrltrim(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrnormalize(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrregexm(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrregexra(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrregexrf(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrregexs(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrreverse(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrright(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrtrim(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrsortkey(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrsortkeyex(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrtitle(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrto(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrtohex(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrtoname(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrtrim(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrunescape(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrupper(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrword(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ustrwordcount(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<usubinstr(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<usubstr(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<upper(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<word(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<wordbreaklocale(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<wordcount(/ end=/)/ contains=@stataFuncGroup
 " }}}
 
