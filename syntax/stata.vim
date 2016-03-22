@@ -298,7 +298,16 @@ syn keyword stataCommand twoway
 syn keyword stataCommand type
 syn keyword stataCommand unab
 syn keyword stataCommand unabcmd
-syn keyword stataCommand unicode
+syn match stataCommand '\<unicode analyze\>'
+syn match stataCommand '\<unicode loc\(ale\)\? list\>'
+syn match stataCommand '\<unicode coll\(ator\)\? list\>'
+syn match stataCommand '\<unicode conv\(ertfile\)\?\>'
+syn match stataCommand '\<unicode enc\(oding\)\? \(set\|alias\|list\)\>'
+syn match stataCommand '\<unicode erasebackups\>'
+syn match stataCommand '\<unicode retr\(anslate\)\?\>'
+syn match stataCommand '\<unicode restore\>'
+syn match stataCommand '\<unicode tr\(anslate\)\?\>'
+syn match stataCommand '\<unicode ui\(package\)\? list\>'
 syn keyword stataCommand update
 syn keyword stataCommand use
 syn keyword stataCommand using
