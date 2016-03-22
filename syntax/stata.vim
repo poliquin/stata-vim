@@ -576,6 +576,7 @@ syn region stataFunc matchgroup=Function start=/\<soundex_nara(/ end=/)/ contain
 syn region stataFunc matchgroup=Function start=/\<strcat(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<strdup(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<string(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<stritrim(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<strlen(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<strlower(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<strltrim(/ end=/)/ contains=@stataFuncGroup
