@@ -7,9 +7,9 @@ priority -50
 snippet dofile "Set up a new do file" b
 * ${1:A Stata script.}
 
+${4:clear all}
 set more ${2:off}
 set seed ${3:8675309}
-${4:clear all}
 
 $0
 
