@@ -58,7 +58,7 @@ syn keyword stataType int
 syn keyword stataType long
 syn keyword stataType float
 syn keyword stataType double
-syn match   stataType /strL\?[0-9]*/
+syn match   stataType /\<strL\?[0-9]*\>/
 " }}}
 
 
