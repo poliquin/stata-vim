@@ -1,0 +1,38 @@
+
+priority -50
+
+
+snippet dctfile "Create a data dictionary for infile" b
+infile dictionary {
+	* ${1:Data dictionary for...}
+	_first(1)
+	_lines(1)
+
+	_column(1)
+		$0
+}
+endsnippet
+
+snippet byte "Add byte column to dictionary"
+byte ${1:varname} %${2:1}f "${3:variable label}"
+endsnippet
+
+snippet int "Add int column to dictionary"
+int ${1:varname} %${2:4}f "${3:variable label}"
+endsnippet
+
+snippet long "Add long column to dictionary"
+long ${1:varname} %${2:9}f "${3:variable label}"
+endsnippet
+
+snippet float "Add float column to dictionary"
+float ${1:varname} %${2:6.2}f "${3:variable label}"
+endsnippet
+
+snippet double "Add double column to dictionary"
+double ${1:varname} %${2:9.2}f "${3:variable label}"
+endsnippet
+
+snippet str "Add string column to dictionary"
+str$1 ${2:varname} %$1s "${3:variable label}"
+endsnippet
