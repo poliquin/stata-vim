@@ -308,6 +308,7 @@ syn match stataCommand '\<unicode retr\(anslate\)\?\>'
 syn match stataCommand '\<unicode restore\>'
 syn match stataCommand '\<unicode tr\(anslate\)\?\>'
 syn match stataCommand '\<unicode ui\(package\)\? list\>'
+syn keyword stataCommand unzipfile
 syn keyword stataCommand update
 syn keyword stataCommand use
 syn keyword stataCommand using
@@ -327,6 +328,7 @@ syn keyword stataCommand xtpoisson
 syn keyword stataCommand xtset
 syn keyword stataCommand xtreg
 syn keyword stataCommand xtstreg
+syn keyword stataCommand zipfile
 " }}}
 
 
