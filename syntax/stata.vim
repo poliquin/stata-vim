@@ -792,9 +792,9 @@ syn region stataFunc matchgroup=Function start=/\<vecdiag(/ end=/)/ contains=@st
 syn match stataNumber    "\<\d\>"        display
 syn match stataNumber    "\<[1-9]\d\+\>" display
 syn match stataNumber    "\<\d\+[jJ]\>"  display
-syn match stataFloat     "\.\d\+\%([eE][+-]\=\d\+\)\=[jJ]\=\>"    display
-syn match stataFloat     "\<\d\+[eE][+-]\=\d\+[jJ]\=\>"           display
-syn match stataFloat     "\<\d\+\.\d*\%([eE][+-]\=\d\+\)\=[jJ]\=" display
+syn match stataFloat     "\.\d\+\%([eE][+-]\=\d\+\)\=[jJ]\=\>"      display
+syn match stataFloat     "\<\d\+[eE][+-]\=\d\+[jJ]\=\>"             display
+syn match stataFloat     "\<\d\+\.\d*\%([eE][+-]\=\d\+\)\=[jJ]\=\>" display
 syn match stataBinNumber "\<0[bB][01]\+[lL]\=\>" display
 syn match stataBinNumber "\<0[bB][01]\+\>"       display
 syn match stataHexNumber "\<0[xX]\x\+[lL]\=\>"   display
