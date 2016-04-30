@@ -3,13 +3,8 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2016-03-18
-" Version: 0.1.0
+" Version: 0.2.3
 
-" Log:
-" 2016-03-18    Forked original and made minor changes:
-"                   * added additional command keywords
-"                   * added additional functions
-"                   * created stataTodo keywords
 
 " Preamble {{{
 " -----------------------------------------------------------------------------
