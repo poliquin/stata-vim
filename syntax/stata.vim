@@ -131,6 +131,7 @@ syn keyword stataCommand clear
 syn keyword stataCommand collapse
 syn keyword stataCommand corr[elate]
 syn keyword stataCommand compress
+syn keyword stataCommand contrast
 syn keyword stataCommand conf[irm]
 syn keyword stataCommand conren
 syn keyword stataCommand contract
@@ -163,6 +164,7 @@ syn keyword stataCommand erase
 syn keyword stataCommand eret[urn]
 syn keyword stataCommand err[or]
 syn keyword stataCommand estadd
+syn match stataCommand '\<estat \(ic\|summarize\|vce\)\>'
 syn keyword stataCommand estimate[s]
 syn keyword stataCommand excel
 syn keyword stataCommand e[xit]
@@ -171,6 +173,7 @@ syn keyword stataCommand expandcl
 syn keyword stataCommand export
 syn keyword stataCommand file
 syn keyword stataCommand findfile
+syn keyword stataCommand forecast
 syn keyword stataCommand format
 syn keyword stataCommand g[enerate]
 syn keyword stataCommand gettoken
@@ -178,6 +181,7 @@ syn keyword stataCommand gl[obal]
 syn keyword stataCommand glm
 syn keyword stataCommand graph
 syn keyword stataCommand gsort
+syn keyword stataCommand hausman
 syn keyword stataCommand help
 syn keyword stataCommand hexdump
 syn keyword stataCommand icd9[p]
@@ -194,9 +198,11 @@ syn keyword stataCommand keep
 syn keyword stataCommand la[bel]
 syn keyword stataCommand levelsof
 syn keyword stataCommand lincom
+syn keyword stataCommand linktest
 syn keyword stataCommand list
 syn keyword stataCommand loc[al]
 syn keyword stataCommand log
+syn keyword stataCommand lrtest
 syn keyword stataCommand ma[cro]
 syn keyword stataCommand margins[plot]
 syn keyword stataCommand mark
@@ -214,6 +220,7 @@ syn keyword stataCommand mkmat
 syn keyword stataCommand mkspline
 syn keyword stataCommand more
 syn keyword stataCommand net
+syn keyword stataCommand nlcom
 syn keyword stataCommand nobreak
 syn keyword stataCommand nois[ily]
 syn keyword stataCommand note[s]
@@ -228,9 +235,10 @@ syn keyword stataCommand plugin
 syn keyword stataCommand post
 syn keyword stataCommand postclose
 syn keyword stataCommand postfile
-syn keyword stataCommand predict
+syn keyword stataCommand predict[nl]
 syn keyword stataCommand preserve
 syn keyword stataCommand putexcel
+syn keyword stataCommand pwcompare
 syn keyword stataCommand pwd
 syn keyword stataCommand recast
 syn keyword stataCommand recode
@@ -273,6 +281,7 @@ syn keyword stataCommand ssc
 syn keyword stataCommand stack
 syn keyword stataCommand stset
 syn keyword stataCommand su[mmarize]
+syn keyword stataCommand suest
 syn keyword stataCommand svmat
 syn keyword stataCommand syntax
 syn keyword stataCommand sysdescribe
@@ -287,6 +296,8 @@ syn keyword stataCommand tabstat
 syn keyword stataCommand tempfile
 syn keyword stataCommand tempname
 syn keyword stataCommand tempvar
+syn keyword stataCommand test
+syn keyword stataCommand testnl
 syn keyword stataCommand token[ize]
 syn keyword stataCommand tostring
 syn keyword stataCommand translate
