@@ -850,7 +850,7 @@ hi def link stataComment        Comment
 hi def link stataConditional    Conditional
 hi def link stataError          Error
 hi def link stataFunc           None
-hi def link stataMacro          Define
+hi def link stataMacro          Identifier
 hi def link stataRepeat         Repeat
 hi def link stataOperator       Operator
 hi def link stataType           Type
