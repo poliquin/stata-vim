@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2016-03-18
-" Version: 0.2.4
+" Version: 0.3.4
 
 
 " Preamble {{{
@@ -493,6 +493,9 @@ syn region stataFunc matchgroup=Function start=/\<gammaptail(/ end=/)/ contains=
 syn region stataFunc matchgroup=Function start=/\<hypergeometric(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<hypergeometricp(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<ibeta(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<igaussian(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<igaussianden(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<igaussiantail(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invbinomial(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invbinomialtail(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invnbinomial(/ end=/)/ contains=@stataFuncGroup
@@ -505,6 +508,8 @@ syn region stataFunc matchgroup=Function start=/\<invFtail(/ end=/)/ contains=@s
 syn region stataFunc matchgroup=Function start=/\<invgammap(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invgammaptail(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invibeta(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<invigaussian(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<invigaussiantail(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invnchi2(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invFtail(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invibeta(/ end=/)/ contains=@stataFuncGroup
@@ -516,6 +521,7 @@ syn region stataFunc matchgroup=Function start=/\<invt(/ end=/)/ contains=@stata
 syn region stataFunc matchgroup=Function start=/\<invnttail(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invttail(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invtukeyprob(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<lnigaussianden(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<lnnormal(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<lnnormalden(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<nbetaden(/ end=/)/ contains=@stataFuncGroup
@@ -537,6 +543,7 @@ syn region stataFunc matchgroup=Function start=/\<nttail(/ end=/)/ contains=@sta
 syn region stataFunc matchgroup=Function start=/\<poisson(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<poissonp(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<poissontail(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<rigaussian(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<t(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<tden(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<ttail(/ end=/)/ contains=@stataFuncGroup
@@ -651,6 +658,7 @@ syn region stataFunc matchgroup=Function start=/\<byteorder(/ end=/)/ contains=@
 syn region stataFunc matchgroup=Function start=/\<c(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<_caller(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<chop(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<classname(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<clip(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<cond(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<e(/ end=/)/ contains=@stataFuncGroup
@@ -686,6 +694,7 @@ syn region stataFunc matchgroup=Function start=/\<return(/ end=/)/ contains=@sta
 syn region stataFunc matchgroup=Function start=/\<s(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<scalar(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<smallestdouble(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<structname(/ end=/)/ contains=@stataFuncGroup
 " }}}
 
 " date {{{
