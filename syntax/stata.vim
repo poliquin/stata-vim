@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2016-03-18
-" Version: 0.2.3
+" Version: 0.2.4
 
 
 " Preamble {{{
@@ -376,7 +376,7 @@ syn region stataString start=/"/ end=/"/ oneline contains=@stataMacroGroup
 
 " Clusters {{{
 " -----------------------------------------------------------------------------
-syn cluster stataFuncGroup contains=@stataMacroGroup,stataFunc,stataString,stataEstring,stataParen,stataBracket
+syn cluster stataFuncGroup contains=@stataMacroGroup,stataFunc,stataString,stataEstring,stataParen,stataBracket,stataComment
 syn cluster stataMacroGroup contains=stataGlobal,stataLocal
 syn cluster stataParenGroup contains=stataParenError,stataBracketError,stataBraceError,stataSpecial,stataFormat
 " }}}
