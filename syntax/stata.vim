@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2016-03-18
-" Version: 0.3.4
+" Version: 0.3.5
 
 
 " Preamble {{{
@@ -187,6 +187,7 @@ syn keyword stataCommand infile
 syn keyword stataCommand infix
 syn keyword stataCommand input
 syn keyword stataCommand insheet
+syn keyword stataCommand isid
 syn keyword stataCommand ivreg[ress]
 syn keyword stataCommand joinby
 syn keyword stataCommand keep
@@ -244,6 +245,7 @@ syn keyword stataCommand printer
 syn keyword stataCommand profiler
 syn keyword stataCommand pr[ogram]
 syn keyword stataCommand pwcorr
+syn keyword stataCommand quadchk
 syn keyword stataCommand q[uery]
 syn keyword stataCommand qui[etly]
 syn keyword stataCommand rcof
@@ -329,11 +331,34 @@ syn keyword stataCommand who
 syn keyword stataCommand window
 syn keyword stataCommand xtdes[cribe]
 syn keyword stataCommand xi
+syn keyword stataCommand xtabond
+syn keyword stataCommand xtcloglog
+syn keyword stataCommand xtdata
+syn keyword stataCommand xtdpd
+syn keyword stataCommand xtdpdsys
+syn keyword stataCommand xtfrontier
+syn keyword stataCommand xtgls
+syn keyword stataCommand xtgee
+syn keyword stataCommand xtivreg
 syn keyword stataCommand xtline
+syn keyword stataCommand xtlogit
+syn keyword stataCommand xthtaylor
+syn keyword stataCommand xtintreg
+syn keyword stataCommand xtnbreg
+syn keyword stataCommand xtologit
+syn keyword stataCommand xtoprobit
+syn keyword stataCommand xtpcse
 syn keyword stataCommand xtpoisson
-syn keyword stataCommand xtset
+syn keyword stataCommand xtprobit
+syn keyword stataCommand xtrc
 syn keyword stataCommand xtreg
+syn keyword stataCommand xtregar
+syn keyword stataCommand xtset
 syn keyword stataCommand xtstreg
+syn keyword stataCommand xtsum
+syn keyword stataCommand xttab
+syn keyword stataCommand xttobit
+syn keyword stataCommand xtunitroot
 syn keyword stataCommand zipfile
 " }}}
 
