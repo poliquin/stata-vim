@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2016-03-18
-" Version: 0.3.5
+" Version: 0.3.6
 
 
 " Preamble {{{
@@ -159,7 +159,7 @@ syn keyword stataCommand erase
 syn keyword stataCommand eret[urn]
 syn keyword stataCommand err[or]
 syn keyword stataCommand estadd
-syn match stataCommand '\<estat \(ic\|summarize\|vce\)\>'
+syn match stataCommand '\<estat \(ic\|summarize\|vce\|gof\)\>'
 syn keyword stataCommand estimate[s]
 syn keyword stataCommand excel
 syn keyword stataCommand e[xit]
@@ -174,6 +174,7 @@ syn keyword stataCommand g[enerate]
 syn keyword stataCommand gettoken
 syn keyword stataCommand gl[obal]
 syn keyword stataCommand glm
+syn keyword stataCommand gnbreg
 syn keyword stataCommand graph
 syn keyword stataCommand gsort
 syn keyword stataCommand hausman
@@ -209,12 +210,16 @@ syn keyword stataCommand matname
 syn keyword stataCommand mat[rix]
 syn keyword stataCommand median
 syn keyword stataCommand memory
+syn keyword stataCommand menbreg
+syn keyword stataCommand mepoisson
 syn keyword stataCommand merge
 syn keyword stataCommand mestreg
+syn keyword stataCommand meqrpoisson
 syn keyword stataCommand mkdir
 syn keyword stataCommand mkmat
 syn keyword stataCommand mkspline
 syn keyword stataCommand more
+syn keyword stataCommand nbreg
 syn keyword stataCommand net
 syn keyword stataCommand nlcom
 syn keyword stataCommand nobreak
@@ -228,6 +233,7 @@ syn keyword stataCommand outsheet
 syn keyword stataCommand _parse
 syn keyword stataCommand pause
 syn keyword stataCommand plugin
+syn keyword stataCommand poisson
 syn keyword stataCommand post
 syn keyword stataCommand postclose
 syn keyword stataCommand postfile
@@ -295,8 +301,10 @@ syn keyword stataCommand tempname
 syn keyword stataCommand tempvar
 syn keyword stataCommand test
 syn keyword stataCommand testnl
+syn keyword stataCommand tnbreg
 syn keyword stataCommand token[ize]
 syn keyword stataCommand tostring
+syn keyword stataCommand tpoisson
 syn keyword stataCommand translate
 syn keyword stataCommand tsline
 syn keyword stataCommand tsfill
@@ -359,6 +367,8 @@ syn keyword stataCommand xtsum
 syn keyword stataCommand xttab
 syn keyword stataCommand xttobit
 syn keyword stataCommand xtunitroot
+syn keyword stataCommand zinb
+syn keyword stataCommand zip
 syn keyword stataCommand zipfile
 " }}}
 
