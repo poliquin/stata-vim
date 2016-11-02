@@ -190,6 +190,7 @@ syn keyword stataCommand input
 syn keyword stataCommand insheet
 syn keyword stataCommand isid
 syn keyword stataCommand ivreg[ress]
+syn keyword stataCommand jackknife
 syn keyword stataCommand joinby
 syn keyword stataCommand keep
 syn keyword stataCommand la[bel]
@@ -232,6 +233,7 @@ syn keyword stataCommand outfile
 syn keyword stataCommand outsheet
 syn keyword stataCommand _parse
 syn keyword stataCommand pause
+syn keyword stataCommand permute
 syn keyword stataCommand plugin
 syn keyword stataCommand poisson
 syn keyword stataCommand post
@@ -277,6 +279,7 @@ syn keyword stataCommand separate
 syn keyword stataCommand serset
 syn keyword stataCommand set
 syn keyword stataCommand shell
+syn keyword stataCommand simulate
 syn keyword stataCommand sleep
 syn keyword stataCommand sort
 syn keyword stataCommand split
