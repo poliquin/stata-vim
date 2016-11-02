@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2016-11-02
-" Version: 0.3.7
+" Version: 0.3.8
 
 
 " Preamble {{{
@@ -245,6 +245,7 @@ syn keyword stataCommand pwd
 syn keyword stataCommand recast
 syn keyword stataCommand recode
 syn keyword stataCommand restore
+syn keyword stataCommand rolling
 syn keyword stataCommand run
 syn keyword stataCommand print
 syn keyword stataCommand printer
@@ -282,6 +283,7 @@ syn keyword stataCommand split
 syn keyword stataCommand sret[urn]
 syn keyword stataCommand ssc
 syn keyword stataCommand stack
+syn keyword stataCommand statsby
 syn keyword stataCommand stset
 syn keyword stataCommand su[mmarize]
 syn keyword stataCommand suest
