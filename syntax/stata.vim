@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2016-03-18
-" Version: 0.3.6
+" Last Change: 2016-11-02
+" Version: 0.3.7
 
 
 " Preamble {{{
@@ -375,11 +375,11 @@ syn keyword stataCommand zipfile
 
 " Popular user-written commands from ssc or elsewhere {{{
 " -----------------------------------------------------------------------------
+syn keyword stataCommand distinct
 syn keyword stataCommand estout
 syn keyword stataCommand estpost
 syn keyword stataCommand eststo
 syn keyword stataCommand esttab
-syn keyword stataCommand estto
 syn keyword stataCommand grc1leg
 syn keyword stataCommand ivreg2
 syn keyword stataCommand jarowinkler
@@ -389,6 +389,7 @@ syn keyword stataCommand missings
 syn keyword stataCommand outreg[2]
 syn keyword stataCommand psmatch2
 syn keyword stataCommand reclink
+syn keyword stataCommand reghdfe
 syn keyword stataCommand regsave
 syn keyword stataCommand rsource
 syn keyword stataCommand sumtable
@@ -398,6 +399,7 @@ syn keyword stataCommand tabmiss
 syn keyword stataCommand tabout
 syn keyword stataCommand tabstatmat
 syn keyword stataCommand winsor
+syn keyword stataCommand unique
 " }}}
 
 
