@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2016-11-02
-" Version: 0.3.8
+" Last Change: 2016-11-30
+" Version: 0.3.9
 
 
 " Preamble {{{
@@ -306,6 +306,7 @@ syn keyword stataCommand tempname
 syn keyword stataCommand tempvar
 syn keyword stataCommand test
 syn keyword stataCommand testnl
+syn match stataCommand '\<timer \(clear\|on\|off\|list\)\>'
 syn keyword stataCommand tnbreg
 syn keyword stataCommand token[ize]
 syn keyword stataCommand tostring
