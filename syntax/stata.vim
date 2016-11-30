@@ -150,7 +150,7 @@ syn keyword stataCommand do
 syn keyword stataCommand doedit
 syn keyword stataCommand drop
 syn keyword stataCommand dstdize
-syn keyword stataCommand duplicates
+syn match stataCommand '\<duplicates \(e\(xamples\)\?\|l\(ist\)\?\|t\(ag\)\?\|drop\)\>'
 syn keyword stataCommand edit
 syn keyword stataCommand egen[erate]
 syn keyword stataCommand encode
