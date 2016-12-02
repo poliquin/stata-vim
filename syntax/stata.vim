@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2016-12-02
-" Version: 0.4.9
+" Version: 0.4.10
 
 
 " Preamble {{{
@@ -246,11 +246,6 @@ syn keyword stataCommand preserve
 syn keyword stataCommand putexcel
 syn keyword stataCommand pwcompare
 syn keyword stataCommand pwd
-syn keyword stataCommand recast
-syn keyword stataCommand recode
-syn keyword stataCommand restore
-syn keyword stataCommand rolling
-syn keyword stataCommand run
 syn keyword stataCommand print
 syn keyword stataCommand printer
 syn keyword stataCommand profiler
@@ -263,18 +258,22 @@ syn keyword stataCommand qreg_c
 syn keyword stataCommand quadchk
 syn keyword stataCommand q[uery]
 syn keyword stataCommand qui[etly]
+syn keyword stataCommand _rmcoll
+syn keyword stataCommand _rmcoll
+syn keyword stataCommand _rmcollright
+syn keyword stataCommand _robust
 syn keyword stataCommand rcof
+syn keyword stataCommand recast
+syn keyword stataCommand recode
 syn keyword stataCommand reg[ress]
 syn keyword stataCommand rename
 syn keyword stataCommand repeat
 syn keyword stataCommand replace
 syn keyword stataCommand reshape
+syn keyword stataCommand restore
 syn keyword stataCommand ret[urn]
-syn keyword stataCommand _rmcoll
-syn keyword stataCommand _rmcoll
-syn keyword stataCommand _rmcollright
 syn keyword stataCommand rmdir
-syn keyword stataCommand _robust
+syn keyword stataCommand rolling
 syn keyword stataCommand run
 syn keyword stataCommand sample
 syn keyword stataCommand save
