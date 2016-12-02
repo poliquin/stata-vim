@@ -274,6 +274,7 @@ syn keyword stataCommand restore
 syn keyword stataCommand ret[urn]
 syn keyword stataCommand rmdir
 syn keyword stataCommand rolling
+syn keyword stataCommand rreg
 syn keyword stataCommand run
 syn keyword stataCommand sample
 syn keyword stataCommand save
