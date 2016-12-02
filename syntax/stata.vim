@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2016-11-30
-" Version: 0.3.9
+" Last Change: 2016-12-02
+" Version: 0.4.9
 
 
 " Preamble {{{
@@ -111,6 +111,7 @@ syn keyword stataCommand args
 syn keyword stataCommand arima
 syn keyword stataCommand assert
 syn keyword stataCommand bootstrap
+syn keyword stataCommand bsqreg
 syn keyword stataCommand break
 syn keyword stataCommand by
 syn keyword stataCommand bys
@@ -188,6 +189,7 @@ syn keyword stataCommand infile
 syn keyword stataCommand infix
 syn keyword stataCommand input
 syn keyword stataCommand insheet
+syn keyword stataCommand iqreg
 syn keyword stataCommand isid
 syn keyword stataCommand ivreg[ress]
 syn keyword stataCommand jackknife
@@ -254,6 +256,10 @@ syn keyword stataCommand printer
 syn keyword stataCommand profiler
 syn keyword stataCommand pr[ogram]
 syn keyword stataCommand pwcorr
+syn keyword stataCommand _qreg
+syn keyword stataCommand _qregwls
+syn keyword stataCommand qreg
+syn keyword stataCommand qreg_c
 syn keyword stataCommand quadchk
 syn keyword stataCommand q[uery]
 syn keyword stataCommand qui[etly]
@@ -283,6 +289,7 @@ syn keyword stataCommand simulate
 syn keyword stataCommand sleep
 syn keyword stataCommand sort
 syn keyword stataCommand split
+syn keyword stataCommand sqreg
 syn keyword stataCommand sret[urn]
 syn keyword stataCommand ssc
 syn keyword stataCommand stack
