@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2016-12-04
-" Version: 0.4.11
+" Version: 0.4.12
 
 
 " Preamble {{{
@@ -154,7 +154,7 @@ syn keyword stataCommand doedit
 syn keyword stataCommand drop
 syn keyword stataCommand ds
 syn keyword stataCommand dstdize
-syn match stataCommand '\<duplicates \(e\(xamples\)\?\|l\(ist\)\?\|t\(ag\)\?\|drop\)\>'
+syn match stataCommand '\<duplicates \(r\(eport\)\?\|e\(xamples\)\?\|l\(ist\)\?\|t\(ag\)\?\|drop\)\>'
 syn keyword stataCommand edit
 syn keyword stataCommand egen[erate]
 syn keyword stataCommand encode
