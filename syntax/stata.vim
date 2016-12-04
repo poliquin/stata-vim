@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2016-12-02
-" Version: 0.4.10
+" Last Change: 2016-12-04
+" Version: 0.4.11
 
 
 " Preamble {{{
@@ -118,12 +118,14 @@ syn keyword stataCommand bys
 syn keyword stataCommand bysort
 syn keyword stataCommand cap[ture]
 syn keyword stataCommand cd
+syn keyword stataCommand cf
 syn keyword stataCommand chdir
 syn keyword stataCommand checksum
 syn keyword stataCommand churdle
 syn keyword stataCommand class
 syn keyword stataCommand classutil
 syn keyword stataCommand clear
+syn keyword stataCommand codebook
 syn keyword stataCommand collapse
 syn keyword stataCommand corr[elate]
 syn keyword stataCommand compress
@@ -150,6 +152,7 @@ syn keyword stataCommand di[splay]
 syn keyword stataCommand do
 syn keyword stataCommand doedit
 syn keyword stataCommand drop
+syn keyword stataCommand ds
 syn keyword stataCommand dstdize
 syn match stataCommand '\<duplicates \(e\(xamples\)\?\|l\(ist\)\?\|t\(ag\)\?\|drop\)\>'
 syn keyword stataCommand edit
@@ -189,6 +192,7 @@ syn keyword stataCommand infile
 syn keyword stataCommand infix
 syn keyword stataCommand input
 syn keyword stataCommand insheet
+syn keyword stataCommand inspect
 syn keyword stataCommand iqreg
 syn keyword stataCommand isid
 syn keyword stataCommand ivreg[ress]
@@ -196,6 +200,7 @@ syn keyword stataCommand jackknife
 syn keyword stataCommand joinby
 syn keyword stataCommand keep
 syn keyword stataCommand la[bel]
+syn keyword stataCommand labelbook
 syn keyword stataCommand levelsof
 syn keyword stataCommand lincom
 syn keyword stataCommand linktest
@@ -203,6 +208,7 @@ syn keyword stataCommand list
 syn keyword stataCommand loc[al]
 syn keyword stataCommand log
 syn keyword stataCommand lrtest
+syn keyword stataCommand lv
 syn keyword stataCommand ma[cro]
 syn keyword stataCommand margins[plot]
 syn keyword stataCommand mark
@@ -218,6 +224,7 @@ syn keyword stataCommand mepoisson
 syn keyword stataCommand merge
 syn keyword stataCommand mestreg
 syn keyword stataCommand meqrpoisson
+syn keyword stataCommand misstable
 syn keyword stataCommand mkdir
 syn keyword stataCommand mkmat
 syn keyword stataCommand mkspline
@@ -228,6 +235,7 @@ syn keyword stataCommand nlcom
 syn keyword stataCommand nobreak
 syn keyword stataCommand nois[ily]
 syn keyword stataCommand note[s]
+syn keyword stataCommand numlabel
 syn keyword stataCommand numlist
 syn keyword stataCommand odbc
 syn keyword stataCommand order
@@ -294,6 +302,7 @@ syn keyword stataCommand sret[urn]
 syn keyword stataCommand ssc
 syn keyword stataCommand stack
 syn keyword stataCommand statsby
+syn keyword stataCommand stem
 syn keyword stataCommand stset
 syn keyword stataCommand su[mmarize]
 syn keyword stataCommand suest
@@ -340,6 +349,7 @@ syn match stataCommand '\<unicode ui\(package\)\? list\>'
 syn keyword stataCommand unzipfile
 syn keyword stataCommand update
 syn keyword stataCommand use
+syn keyword stataCommand uselabel
 syn keyword stataCommand using
 syn keyword stataCommand vers[ion]
 syn keyword stataCommand view
