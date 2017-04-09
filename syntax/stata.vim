@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2016-12-04
-" Version: 0.4.12
+" Last Change: 2017-04-09
+" Version: 0.4.13
 
 
 " Preamble {{{
@@ -243,6 +243,8 @@ syn keyword stataCommand outfile
 syn keyword stataCommand outsheet
 syn keyword stataCommand _parse
 syn keyword stataCommand pause
+syn keyword stataCommand pctile
+syn keyword stataCommand _pctile
 syn keyword stataCommand permute
 syn keyword stataCommand plugin
 syn keyword stataCommand poisson
@@ -370,6 +372,7 @@ syn keyword stataCommand xtdpdsys
 syn keyword stataCommand xtfrontier
 syn keyword stataCommand xtgls
 syn keyword stataCommand xtgee
+syn keyword stataCommand xtile
 syn keyword stataCommand xtivreg
 syn keyword stataCommand xtline
 syn keyword stataCommand xtlogit
