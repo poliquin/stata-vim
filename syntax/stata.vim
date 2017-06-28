@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2017-04-09
-" Version: 0.4.13
+" Last Change: 2017-06-28
+" Version: 0.4.14
 
 
 " Preamble {{{
@@ -269,7 +269,7 @@ syn keyword stataCommand quadchk
 syn keyword stataCommand q[uery]
 syn keyword stataCommand qui[etly]
 syn keyword stataCommand _rmcoll
-syn keyword stataCommand _rmcoll
+syn keyword stataCommand _rmdcoll
 syn keyword stataCommand _rmcollright
 syn keyword stataCommand _robust
 syn keyword stataCommand rcof
