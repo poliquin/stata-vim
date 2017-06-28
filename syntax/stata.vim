@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2017-06-28
-" Version: 0.4.14
+" Version: 0.4.15
 
 
 " Preamble {{{
@@ -113,6 +113,7 @@ syn keyword stataCommand assert
 syn keyword stataCommand bootstrap
 syn keyword stataCommand bsqreg
 syn keyword stataCommand break
+syn keyword stataCommand brier
 syn keyword stataCommand by
 syn keyword stataCommand bys
 syn keyword stataCommand bysort
@@ -125,6 +126,7 @@ syn keyword stataCommand churdle
 syn keyword stataCommand class
 syn keyword stataCommand classutil
 syn keyword stataCommand clear
+syn keyword stataCommand cloglog
 syn keyword stataCommand codebook
 syn keyword stataCommand collapse
 syn keyword stataCommand corr[elate]
@@ -166,6 +168,7 @@ syn keyword stataCommand estadd
 syn match stataCommand '\<estat \(ic\|summarize\|vce\|gof\)\>'
 syn keyword stataCommand estimate[s]
 syn keyword stataCommand excel
+syn keyword stataCommand exlogistic
 syn keyword stataCommand e[xit]
 syn keyword stataCommand expand
 syn keyword stataCommand expandcl
@@ -177,6 +180,7 @@ syn keyword stataCommand format
 syn keyword stataCommand g[enerate]
 syn keyword stataCommand gettoken
 syn keyword stataCommand gl[obal]
+syn keyword stataCommand glogit
 syn keyword stataCommand glm
 syn keyword stataCommand gnbreg
 syn keyword stataCommand graph
@@ -207,6 +211,8 @@ syn keyword stataCommand linktest
 syn keyword stataCommand list
 syn keyword stataCommand loc[al]
 syn keyword stataCommand log
+syn keyword stataCommand logit
+syn keyword stataCommand logistic
 syn keyword stataCommand lrtest
 syn keyword stataCommand lv
 syn keyword stataCommand ma[cro]
@@ -217,13 +223,20 @@ syn keyword stataCommand marksample
 syn keyword stataCommand mata
 syn keyword stataCommand matname
 syn keyword stataCommand mat[rix]
+syn keyword stataCommand mecloglog
 syn keyword stataCommand median
+syn keyword stataCommand melogit
+syn keyword stataCommand meglm
 syn keyword stataCommand memory
 syn keyword stataCommand menbreg
+syn keyword stataCommand meologit
+syn keyword stataCommand meoprobit
 syn keyword stataCommand mepoisson
+syn keyword stataCommand meprobit
 syn keyword stataCommand merge
 syn keyword stataCommand mestreg
 syn keyword stataCommand meqrpoisson
+syn keyword stataCommand meqrlogit
 syn keyword stataCommand misstable
 syn keyword stataCommand mkdir
 syn keyword stataCommand mkmat
@@ -253,6 +266,7 @@ syn keyword stataCommand postclose
 syn keyword stataCommand postfile
 syn keyword stataCommand predict[nl]
 syn keyword stataCommand preserve
+syn keyword stataCommand probit
 syn keyword stataCommand putexcel
 syn keyword stataCommand pwcompare
 syn keyword stataCommand pwd
@@ -284,6 +298,7 @@ syn keyword stataCommand restore
 syn keyword stataCommand ret[urn]
 syn keyword stataCommand rmdir
 syn keyword stataCommand rolling
+syn keyword stataCommand roc
 syn keyword stataCommand rreg
 syn keyword stataCommand run
 syn keyword stataCommand sample
