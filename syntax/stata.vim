@@ -229,6 +229,7 @@ syn keyword stataCommand melogit
 syn keyword stataCommand meglm
 syn keyword stataCommand memory
 syn keyword stataCommand menbreg
+syn keyword stataCommand menl
 syn keyword stataCommand meologit
 syn keyword stataCommand meoprobit
 syn keyword stataCommand mepoisson
