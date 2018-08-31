@@ -523,11 +523,14 @@ syn region stataFunc matchgroup=Function start=/\<cos(/ end=/)/ contains=@stataF
 syn region stataFunc matchgroup=Function start=/\<cosh(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<digamma(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<exp(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<expm1(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<floor(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<int(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invcloglog(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<invlogit(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<ln(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ln1m(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<ln1p(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<lnfactorial(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<lngamma(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<log(/ end=/)/ contains=@stataFuncGroup
