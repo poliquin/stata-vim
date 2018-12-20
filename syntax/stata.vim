@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2018-12-19
-" Version: 0.5.16
+" Version: 0.5.17
 
 
 " Preamble {{{
@@ -307,7 +307,8 @@ syn keyword stataCommand rolling
 syn keyword stataCommand roc
 syn keyword stataCommand rreg
 syn keyword stataCommand run
-syn keyword stataCommand rv[fp]plot
+syn keyword stataCommand rvfplot
+syn keyword stataCommand rvpplot
 syn keyword stataCommand sample
 syn keyword stataCommand save
 syn keyword stataCommand saveold
