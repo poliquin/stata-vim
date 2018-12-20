@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2017-07-04
-" Version: 0.4.16
+" Last Change: 2018-12-19
+" Version: 0.5.16
 
 
 " Preamble {{{
@@ -102,6 +102,7 @@ syn keyword stataRepeat      while
 " Commands {{{
 " -----------------------------------------------------------------------------
 syn keyword stataCommand about
+syn keyword stataCommand acprplot
 syn keyword stataCommand adjust
 syn keyword stataCommand adopath
 syn keyword stataCommand adoupdate
@@ -110,6 +111,8 @@ syn keyword stataCommand areg
 syn keyword stataCommand args
 syn keyword stataCommand arima
 syn keyword stataCommand assert
+syn keyword stataCommand avplot
+syn keyword stataCommand avplots
 syn keyword stataCommand bootstrap
 syn keyword stataCommand bsqreg
 syn keyword stataCommand break
@@ -140,6 +143,7 @@ syn keyword stataCommand continue
 syn keyword stataCommand copy
 syn keyword stataCommand cou[nt]
 syn keyword stataCommand cpoisson
+syn keyword stataCommand cprplot
 syn keyword stataCommand cross
 syn keyword stataCommand cscript
 syn keyword stataCommand cscript_log
@@ -215,6 +219,7 @@ syn keyword stataCommand logit
 syn keyword stataCommand logistic
 syn keyword stataCommand lrtest
 syn keyword stataCommand lv
+syn keyword stataCommand lvr2plot
 syn keyword stataCommand ma[cro]
 syn keyword stataCommand margins[plot]
 syn keyword stataCommand mark
@@ -302,6 +307,7 @@ syn keyword stataCommand rolling
 syn keyword stataCommand roc
 syn keyword stataCommand rreg
 syn keyword stataCommand run
+syn keyword stataCommand rv[fp]plot
 syn keyword stataCommand sample
 syn keyword stataCommand save
 syn keyword stataCommand saveold
