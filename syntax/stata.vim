@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2020-03-19
-" Version: 0.6.18
+" Version: 0.6.19
 
 
 " Preamble {{{
@@ -1060,7 +1060,7 @@ hi def link stataMacro          Identifier
 hi def link stataRepeat         Repeat
 hi def link stataOperator       Operator
 hi def link stataType           Type
-hi def link stataSpecial        SpecialChar
+hi def link stataSpecial        Constant
 hi def link stataString         String
 hi def link stataNumber         Number
 hi def link stataFloat          Float
