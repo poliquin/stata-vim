@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2019-09-11
-" Version: 0.6.17
+" Last Change: 2020-03-19
+" Version: 0.6.18
 
 
 " Preamble {{{
@@ -76,17 +76,6 @@ syn match stataGlobal /\$\a\w*/
 syn region stataGlobal start=/\${/ end=/}/ oneline contains=@stataMacroGroup
 " local macros - general case
 syn region stataLocal start=/`/ end=/'/ oneline contains=@stataMacroGroup
-" }}}
-
-
-" Formats {{{
-" -----------------------------------------------------------------------------
-" numeric
-syn match  stataFormat /%-\=\d\+\.\d\+[efg]c\=/
-" hex format
-syn match  stataFormat /%-\=21x/
-" string
-syn match  stataFormat /%\(\|-\|\~\)\d\+s/
 " }}}
 
 
@@ -1013,6 +1002,17 @@ syn match stataHexNumber "\<0[xX]\x\+[lL]\=\>"   display
 syn match stataHexNumber "\<0[xX]\x\+\>"         display
 syn match stataOctNumber "\<0[oO]\o\+[lL]\=\>"   display
 syn match stataOctNumber "\<0[oO]\o\+\>"         display
+" }}}
+
+
+" Formats {{{
+" -----------------------------------------------------------------------------
+" numeric
+syn match  stataFormat /%-\=\d\+\.\d\+[efg]c\=/
+" hex format
+syn match  stataFormat /%-\=21x/
+" string
+syn match  stataFormat /%\(\|-\|\~\)\d\+s/
 " }}}
 
 
