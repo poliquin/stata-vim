@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2020-03-19
-" Version: 0.6.19
+" Last Change: 2020-05-20
+" Version: 0.6.20
 
 
 " Preamble {{{
@@ -237,6 +237,8 @@ syn keyword stataCommand mkdir
 syn keyword stataCommand mkmat
 syn keyword stataCommand mkspline
 syn keyword stataCommand more
+syn keyword stataCommand mvdecode
+syn keyword stataCommand mvencode
 syn keyword stataCommand nbreg
 syn keyword stataCommand net
 syn keyword stataCommand nlcom
@@ -285,7 +287,7 @@ syn keyword stataCommand rcof
 syn keyword stataCommand recast
 syn keyword stataCommand recode
 syn keyword stataCommand reg[ress]
-syn keyword stataCommand rename
+syn keyword stataCommand ren[ame]
 syn keyword stataCommand repeat
 syn keyword stataCommand replace
 syn keyword stataCommand reshape
@@ -328,6 +330,7 @@ syn keyword stataCommand sysuse
 syn keyword stataCommand tabdisp
 syn keyword stataCommand table
 syn keyword stataCommand tab[ulate]
+syn keyword stataCommand tab1
 syn keyword stataCommand tab2
 syn keyword stataCommand tabi
 syn keyword stataCommand tabstat
