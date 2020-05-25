@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2020-05-20
-" Version: 0.6.20
+" Version: 0.6.21
 
 
 " Preamble {{{
@@ -171,6 +171,7 @@ syn keyword stataCommand findfile
 syn keyword stataCommand forecast
 syn keyword stataCommand format
 syn keyword stataCommand g[enerate]
+syn keyword stataCommand getmata
 syn keyword stataCommand gettoken
 syn keyword stataCommand gl[obal]
 syn keyword stataCommand glogit
@@ -265,6 +266,7 @@ syn keyword stataCommand predict[nl]
 syn keyword stataCommand preserve
 syn keyword stataCommand probit
 syn keyword stataCommand putexcel
+syn keyword stataCommand putmata
 syn keyword stataCommand pwcompare
 syn keyword stataCommand pwd
 syn keyword stataCommand print
