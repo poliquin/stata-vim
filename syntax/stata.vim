@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2020-05-20
-" Version: 0.6.21
+" Last Change: 2020-06-25
+" Version: 0.6.22
 
 
 " Preamble {{{
@@ -421,6 +421,7 @@ syn keyword stataCommand zipfile
 syn keyword stataCommand asdoc
 syn keyword stataCommand astile
 syn keyword stataCommand distinct
+syn keyword stataCommand eglist
 syn keyword stataCommand estout
 syn keyword stataCommand estpost
 syn keyword stataCommand eststo
@@ -445,6 +446,7 @@ syn keyword stataCommand gstats
 syn keyword stataCommand gunique
 syn keyword stataCommand gdistinct
 syn keyword stataCommand gtop
+syn keyword stataCommand hashsort
 syn keyword stataCommand ivreg2
 syn keyword stataCommand ivreg28
 syn keyword stataCommand ivreg29
@@ -452,6 +454,19 @@ syn keyword stataCommand ivreg210
 syn keyword stataCommand jarowinkler
 syn keyword stataCommand keeporder
 syn keyword stataCommand kountry
+syn keyword stataCommand labcd
+syn keyword stataCommand labcopy
+syn keyword stataCommand labdel
+syn keyword stataCommand labdtch
+syn keyword stataCommand lablog
+syn keyword stataCommand labmap
+syn keyword stataCommand labmask
+syn keyword stataCommand labnoeq
+syn keyword stataCommand labvalch
+syn keyword stataCommand labvarch
+syn keyword stataCommand labvalclone
+syn keyword stataCommand labvalcombine
+syn keyword stataCommand mdesc
 syn keyword stataCommand missings
 syn keyword stataCommand outreg[2]
 syn keyword stataCommand psmatch2
@@ -462,6 +477,7 @@ syn keyword stataCommand rsource
 syn keyword stataCommand sumtable
 syn keyword stataCommand stan
 syn keyword stataCommand svmat2
+syn keyword stataCommand sxpose
 syn keyword stataCommand tabmiss
 syn keyword stataCommand tabout
 syn keyword stataCommand tabstatmat
