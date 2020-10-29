@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2020-06-25
-" Version: 0.6.22
+" Last Change: 2020-10-29
+" Version: 0.6.23
 
 
 " Preamble {{{
@@ -170,6 +170,7 @@ syn keyword stataCommand file
 syn keyword stataCommand findfile
 syn keyword stataCommand forecast
 syn keyword stataCommand format
+syn match stataCommand '\<fvset \(report\|b\(ase\)\?\|d\(esign\)\?\|clear\)\>'
 syn keyword stataCommand g[enerate]
 syn keyword stataCommand getmata
 syn keyword stataCommand gettoken
