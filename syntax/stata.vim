@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2020-10-29
-" Version: 0.6.23
+" Last Change: 2021-04-16
+" Version: 0.6.24
 
 
 " Preamble {{{
@@ -235,6 +235,7 @@ syn keyword stataCommand mestreg
 syn keyword stataCommand meqrpoisson
 syn keyword stataCommand meqrlogit
 syn keyword stataCommand misstable
+syn keyword stataCommand mixed
 syn keyword stataCommand mkdir
 syn keyword stataCommand mkmat
 syn keyword stataCommand mkspline
@@ -396,6 +397,8 @@ syn keyword stataCommand xtline
 syn keyword stataCommand xtlogit
 syn keyword stataCommand xthtaylor
 syn keyword stataCommand xtintreg
+syn keyword stataCommand xtmelogit
+syn keyword stataCommand xtmepoisson
 syn keyword stataCommand xtnbreg
 syn keyword stataCommand xtologit
 syn keyword stataCommand xtoprobit
