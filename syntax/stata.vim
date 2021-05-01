@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2021-04-16
-" Version: 0.6.24
+" Last Change: 2021-04-30
+" Version: 0.6.25
 
 
 " Preamble {{{
@@ -170,6 +170,7 @@ syn keyword stataCommand file
 syn keyword stataCommand findfile
 syn keyword stataCommand forecast
 syn keyword stataCommand format
+syn keyword stataCommand fvrevar
 syn match stataCommand '\<fvset \(report\|b\(ase\)\?\|d\(esign\)\?\|clear\)\>'
 syn keyword stataCommand g[enerate]
 syn keyword stataCommand getmata
@@ -424,6 +425,7 @@ syn keyword stataCommand zipfile
 " -----------------------------------------------------------------------------
 syn keyword stataCommand asdoc
 syn keyword stataCommand astile
+syn keyword stataCommand collin
 syn keyword stataCommand distinct
 syn keyword stataCommand eglist
 syn keyword stataCommand estout
