@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2021-04-30
-" Version: 0.6.25
+" Last Change: 2021-05-03
+" Version: 0.6.26
 
 
 " Preamble {{{
@@ -159,7 +159,7 @@ syn keyword stataCommand eret[urn]
 syn keyword stataCommand err[or]
 syn keyword stataCommand estadd
 syn match stataCommand '\<estat \(ic\|summarize\|vce\|gof\)\>'
-syn match stataCommand '\<est\(imates\)\? \(save\|use\|esample\)\>'
+syn match stataCommand '\<est\(imates\)\? \(save\|use\|esample\|store\|restore\)\>'
 syn keyword stataCommand excel
 syn keyword stataCommand exlogistic
 syn keyword stataCommand e[xit]
