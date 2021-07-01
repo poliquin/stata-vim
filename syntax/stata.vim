@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2021-05-03
-" Version: 0.6.26
+" Last Change: 2021-07-01
+" Version: 0.6.27
 
 
 " Preamble {{{
@@ -102,6 +102,7 @@ syn keyword stataCommand arima
 syn keyword stataCommand assert
 syn keyword stataCommand avplot
 syn keyword stataCommand avplots
+syn keyword stataCommand bitest
 syn keyword stataCommand bootstrap
 syn keyword stataCommand bsqreg
 syn keyword stataCommand break
@@ -110,6 +111,9 @@ syn keyword stataCommand by
 syn keyword stataCommand bys
 syn keyword stataCommand bysort
 syn keyword stataCommand cap[ture]
+syn keyword stataCommand ci[i] mean[s]
+syn keyword stataCommand ci[i] prop[ortions]
+syn keyword stataCommand ci[i] var[iances]
 syn keyword stataCommand cd
 syn keyword stataCommand cf
 syn keyword stataCommand chdir
@@ -184,6 +188,7 @@ syn keyword stataCommand gsort
 syn keyword stataCommand hausman
 syn keyword stataCommand help
 syn keyword stataCommand hexdump
+syn keyword stataCommand hotelling
 syn keyword stataCommand icd9[p]
 syn keyword stataCommand icd10
 syn keyword stataCommand import
@@ -213,6 +218,7 @@ syn keyword stataCommand lrtest
 syn keyword stataCommand lv
 syn keyword stataCommand lvr2plot
 syn keyword stataCommand ma[cro]
+syn keyword stataCommand manova
 syn keyword stataCommand margins[plot]
 syn keyword stataCommand mark
 syn keyword stataCommand markout
@@ -243,6 +249,7 @@ syn keyword stataCommand mkspline
 syn keyword stataCommand more
 syn keyword stataCommand mvdecode
 syn keyword stataCommand mvencode
+syn keyword stataCommand mvtest m[eans]
 syn keyword stataCommand nbreg
 syn keyword stataCommand net
 syn keyword stataCommand nlcom
@@ -268,6 +275,7 @@ syn keyword stataCommand postfile
 syn keyword stataCommand predict[nl]
 syn keyword stataCommand preserve
 syn keyword stataCommand probit
+syn keyword stataCommand prtest
 syn keyword stataCommand putexcel
 syn keyword stataCommand putmata
 syn keyword stataCommand pwcompare
@@ -276,6 +284,7 @@ syn keyword stataCommand print
 syn keyword stataCommand printer
 syn keyword stataCommand profiler
 syn keyword stataCommand pr[ogram]
+syn keyword stataCommand proportion
 syn keyword stataCommand pwcorr
 syn keyword stataCommand _qreg
 syn keyword stataCommand _qregwls
