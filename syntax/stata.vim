@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2021-07-08
-" Version: 0.6.28
+" Version: 0.6.29
 
 
 " Preamble {{{
@@ -595,7 +595,7 @@ syn region stataString start=/"/ end=/"/ oneline contains=@stataMacroGroup
 
 " Clusters {{{
 " -----------------------------------------------------------------------------
-syn cluster stataFuncGroup contains=@stataMacroGroup,stataFunc,stataString,stataEstring,stataParen,stataBracket,stataComment
+syn cluster stataFuncGroup contains=@stataMacroGroup,stataFunc,stataString,stataEstring,stataParen,stataBracket,stataComment,stataNumber,stataFloat,stataBinNumber,stataHexNumber,stataOctNumber
 syn cluster stataMacroGroup contains=stataGlobal,stataLocal
 syn cluster stataParenGroup contains=stataParenError,stataBracketError,stataBraceError,stataSpecial,stataFormat
 " }}}
@@ -1027,7 +1027,7 @@ syn region stataFunc matchgroup=Function start=/\<vecdiag(/ end=/)/ contains=@st
 " -----------------------------------------------------------------------------
 " (patterns from github.com/zizhongyan/stata-vim-syntax)
 syn match stataNumber    "\<\d\>"        display
-syn match stataNumber    "\<[1-9]\d\+\>" display
+syn match stataNumber    "\<[0-9]\d\+\>" display
 syn match stataNumber    "\<\d\+[jJ]\>"  display
 syn match stataFloat     "\.\d\+\%([eE][+-]\=\d\+\)\=[jJ]\=\>"      display
 syn match stataFloat     "\<\d\+[eE][+-]\=\d\+[jJ]\=\>"             display
