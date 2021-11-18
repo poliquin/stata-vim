@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2021-07-08
-" Version: 0.6.29
+" Last Change: 2021-11-18
+" Version: 0.6.30
 
 
 " Preamble {{{
@@ -171,6 +171,7 @@ syn keyword stataCommand expand
 syn keyword stataCommand expandcl
 syn keyword stataCommand export
 syn keyword stataCommand file
+syn keyword stataCommand fillin
 syn keyword stataCommand findfile
 syn keyword stataCommand forecast
 syn keyword stataCommand format
