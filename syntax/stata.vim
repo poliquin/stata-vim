@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2021-11-18
-" Version: 0.6.30
+" Last Change: 2022-01-19
+" Version: 0.6.31
 
 
 " Preamble {{{
@@ -455,18 +455,22 @@ syn keyword stataCommand greshape
 syn keyword stataCommand gegen
 syn keyword stataCommand gcontract
 syn keyword stataCommand gisid
+syn keyword stataCommand givregress
 syn keyword stataCommand glevelsof
 syn keyword stataCommand gduplicates
 syn keyword stataCommand gquantiles
+syn keyword stataCommand gregress
 syn keyword stataCommand gstats
 syn keyword stataCommand gunique
 syn keyword stataCommand gdistinct
 syn keyword stataCommand gtop
 syn keyword stataCommand hashsort
+syn keyword stataCommand hdfe
 syn keyword stataCommand ivreg2
 syn keyword stataCommand ivreg28
 syn keyword stataCommand ivreg29
 syn keyword stataCommand ivreg210
+syn keyword stataCommand ivreghdfe
 syn keyword stataCommand jarowinkler
 syn keyword stataCommand keeporder
 syn keyword stataCommand kountry
@@ -485,6 +489,7 @@ syn keyword stataCommand labvalcombine
 syn keyword stataCommand mdesc
 syn keyword stataCommand missings
 syn keyword stataCommand outreg[2]
+syn keyword stataCommand ppmlhdfe
 syn keyword stataCommand psmatch2
 syn keyword stataCommand reclink
 syn keyword stataCommand reghdfe
