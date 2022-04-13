@@ -11,8 +11,10 @@ Syntax highlighting and snippets for editing Stata files with vim/neovim.
 * Syntax highlighting for SMCL (Stata help files).
 * Snippets for use with [UltiSnips](https://github.com/sirver/ultisnips).
 
-My goal is to be compatible with the latest version of Stata, which is
-currently Stata 14.
+This project is currently compatible with Stata 15. Several commands
+introduced in Stata 16 and 17 will not be highlighted correctly. I mostly
+use Stata 15 and I am unlikely to update this project to support later
+versions of Stata until I upgrade. Pull requests are welcome.
 
 
 ## Installation
