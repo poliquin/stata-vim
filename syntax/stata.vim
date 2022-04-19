@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2022-01-19
-" Version: 0.6.31
+" Last Change: 2022-04-18
+" Version: 0.6.32
 
 
 " Preamble {{{
@@ -603,7 +603,7 @@ syn region stataString start=/"/ end=/"/ oneline contains=@stataMacroGroup
 " -----------------------------------------------------------------------------
 syn cluster stataFuncGroup contains=@stataMacroGroup,stataFunc,stataString,stataEstring,stataParen,stataBracket,stataComment,stataNumber,stataFloat,stataBinNumber,stataHexNumber,stataOctNumber
 syn cluster stataMacroGroup contains=stataGlobal,stataLocal
-syn cluster stataParenGroup contains=stataParenError,stataBracketError,stataBraceError,stataSpecial,stataFormat
+syn cluster stataParenGroup contains=stataParenError,stataBracketError,stataBraceError,stataSpecial
 " }}}
 
 
