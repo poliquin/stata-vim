@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2022-04-18
-" Version: 0.6.32
+" Last Change: 2022-04-25
+" Version: 0.6.33
 
 
 " Preamble {{{
@@ -189,6 +189,7 @@ syn keyword stataCommand gsort
 syn keyword stataCommand hausman
 syn keyword stataCommand help
 syn keyword stataCommand hexdump
+syn keyword stataCommand hist
 syn keyword stataCommand hotelling
 syn keyword stataCommand icd9[p]
 syn keyword stataCommand icd10
