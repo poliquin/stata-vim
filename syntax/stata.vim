@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2022-04-25
-" Version: 0.6.33
+" Version: 0.6.34
 
 
 " Preamble {{{
@@ -81,7 +81,7 @@ syn region stataLocal start=/`/ end=/'/ oneline contains=@stataMacroGroup
 
 " Statements {{{
 " -----------------------------------------------------------------------------
-syn keyword stataConditional else if
+syn keyword stataConditional else if in
 syn keyword stataRepeat      foreach
 syn keyword stataRepeat      forv[alues]
 syn keyword stataRepeat      while
