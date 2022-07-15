@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2022-04-25
-" Version: 0.6.34
+" Version: 0.6.35
 
 
 " Preamble {{{
@@ -162,8 +162,9 @@ syn keyword stataCommand erase
 syn keyword stataCommand eret[urn]
 syn keyword stataCommand err[or]
 syn keyword stataCommand estadd
+syn keyword stataCommand etable
 syn match stataCommand '\<estat \(ic\|summarize\|vce\|gof\)\>'
-syn match stataCommand '\<est\(imates\)\? \(save\|use\|esample\|sto\(re\)\?\|res\(tore\)\?\|q\(uery\)\?\|des\(cribe\)\?\|drop\|dir\|clear\)\>'
+syn match stataCommand '\<est\(imates\)\? \(save\|use\|esample\|tab\(le\)\?\|sto\(re\)\?\|res\(tore\)\?\|q\(uery\)\?\|des\(cribe\)\?\|drop\|dir\|clear\)\>'
 syn keyword stataCommand excel
 syn keyword stataCommand exlogistic
 syn keyword stataCommand e[xit]
