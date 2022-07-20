@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2022-04-25
-" Version: 0.6.35
+" Version: 0.6.36
 
 
 " Preamble {{{
@@ -140,6 +140,7 @@ syn keyword stataCommand cprplot
 syn keyword stataCommand cross
 syn keyword stataCommand cscript
 syn keyword stataCommand cscript_log
+syn keyword stataCommand cwf
 syn keyword stataCommand #delimit
 syn keyword stataCommand decode
 syn keyword stataCommand d[escribe]
@@ -176,6 +177,9 @@ syn keyword stataCommand fillin
 syn keyword stataCommand findfile
 syn keyword stataCommand forecast
 syn keyword stataCommand format
+syn match stataCommand '\<frame\(s\)\?\( dir\| create\| change\| copy\| put\| post\| drop\| rename\| reset\)\?\>'
+syn keyword stataCommand frlink
+syn keyword stataCommand frget
 syn keyword stataCommand fvrevar
 syn match stataCommand '\<fvset \(report\|b\(ase\)\?\|d\(esign\)\?\|clear\)\>'
 syn keyword stataCommand g[enerate]
@@ -289,6 +293,7 @@ syn keyword stataCommand profiler
 syn keyword stataCommand pr[ogram]
 syn keyword stataCommand proportion
 syn keyword stataCommand pwcorr
+syn keyword stataCommand pwf
 syn keyword stataCommand _qreg
 syn keyword stataCommand _qregwls
 syn keyword stataCommand qreg
@@ -880,6 +885,27 @@ syn region stataFunc matchgroup=Function start=/\<upper(/ end=/)/ contains=@stat
 syn region stataFunc matchgroup=Function start=/\<word(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<wordbreaklocale(/ end=/)/ contains=@stataFuncGroup
 syn region stataFunc matchgroup=Function start=/\<wordcount(/ end=/)/ contains=@stataFuncGroup
+" }}}
+
+" Frames {{{
+" -----------------------------------------------------------------------------
+syn region stataFunc matchgroup=Function start=/\<frval(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<_frval(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framecurrent(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framedir(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framecreate(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<_st_framecreate(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framecurrent(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<_st_framecurrent(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framerename(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<_st_framerename(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framedrop(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<_st_framedrop(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framedropabc(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framereset(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_framecopy(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<_st_framecopy(/ end=/)/ contains=@stataFuncGroup
+syn region stataFunc matchgroup=Function start=/\<st_frameexists(/ end=/)/ contains=@stataFuncGroup
 " }}}
 
 " programming {{{
