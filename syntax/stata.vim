@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2023-09-14
-" Version: 0.6.37
+" Last Change: 2024-01-23
+" Version: 0.6.38
 
 
 " Preamble {{{
@@ -125,6 +125,7 @@ syn keyword stataCommand clear
 syn keyword stataCommand cloglog
 syn keyword stataCommand codebook
 syn keyword stataCommand collapse
+syn keyword stataCommand collect
 syn keyword stataCommand corr[elate]
 syn keyword stataCommand compress
 syn keyword stataCommand contrast
@@ -193,6 +194,10 @@ syn keyword stataCommand graph
 syn keyword stataCommand gsort
 syn keyword stataCommand hausman
 syn keyword stataCommand help
+syn keyword stataCommand heckman
+syn keyword stataCommand heckoprobit
+syn keyword stataCommand heckpoisson
+syn keyword stataCommand heckprobit
 syn keyword stataCommand hexdump
 syn keyword stataCommand hist[ogram]
 syn keyword stataCommand hotelling
@@ -416,6 +421,7 @@ syn keyword stataCommand xtline
 syn keyword stataCommand xtlogit
 syn keyword stataCommand xthtaylor
 syn keyword stataCommand xtintreg
+syn keyword stataCommand xtheckman
 syn keyword stataCommand xtmelogit
 syn keyword stataCommand xtmepoisson
 syn keyword stataCommand xtnbreg
@@ -495,6 +501,7 @@ syn keyword stataCommand labvarch
 syn keyword stataCommand labvalclone
 syn keyword stataCommand labvalcombine
 syn keyword stataCommand mdesc
+syn keyword stataCommand mipolate
 syn keyword stataCommand missings
 syn keyword stataCommand outreg[2]
 syn keyword stataCommand ppmlhdfe
