@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2024-01-23
-" Version: 0.6.38
+" Last Change: 2025-07-08
+" Version: 0.6.39
 
 
 " Preamble {{{
@@ -164,6 +164,7 @@ syn keyword stataCommand erase
 syn keyword stataCommand eret[urn]
 syn keyword stataCommand err[or]
 syn keyword stataCommand estadd
+syn keyword stataCommand estat
 syn keyword stataCommand etable
 syn match stataCommand '\<estat \(ic\|summarize\|vce\|gof\)\>'
 syn match stataCommand '\<est\(imates\)\? \(save\|use\|esample\|tab\(le\)\?\|sto\(re\)\?\|res\(tore\)\?\|q\(uery\)\?\|des\(cribe\)\?\|drop\|dir\|clear\)\>'
@@ -450,6 +451,8 @@ syn keyword stataCommand zipfile
 syn keyword stataCommand asdoc
 syn keyword stataCommand astile
 syn keyword stataCommand collin
+syn keyword stataCommand did2s
+syn keyword stataCommand did_imputation
 syn keyword stataCommand distinct
 syn keyword stataCommand eglist
 syn keyword stataCommand estout
@@ -486,6 +489,7 @@ syn keyword stataCommand ivreg29
 syn keyword stataCommand ivreg210
 syn keyword stataCommand ivreghdfe
 syn keyword stataCommand jarowinkler
+syn keyword stataCommand jwdid
 syn keyword stataCommand keeporder
 syn keyword stataCommand kountry
 syn keyword stataCommand labcd
