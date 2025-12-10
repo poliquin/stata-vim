@@ -2,8 +2,8 @@
 " Language: Stata and/or Mata
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
-" Last Change: 2025-07-08
-" Version: 0.6.39
+" Last Change: 2025-12-10
+" Version: 0.6.40
 
 
 " Preamble {{{
@@ -123,6 +123,7 @@ syn keyword stataCommand class
 syn keyword stataCommand classutil
 syn keyword stataCommand clear
 syn keyword stataCommand cloglog
+syn keyword stataCommand clonevar
 syn keyword stataCommand codebook
 syn keyword stataCommand collapse
 syn keyword stataCommand collect
@@ -1072,12 +1073,12 @@ syn region stataFunc matchgroup=Function start=/\<vecdiag(/ end=/)/ contains=@st
 " Numbers {{{
 " -----------------------------------------------------------------------------
 " (patterns from github.com/zizhongyan/stata-vim-syntax)
-syn match stataNumber    "\<\d\>"        display
-syn match stataNumber    "\<[0-9]\d\+\>" display
-syn match stataNumber    "\<\d\+[jJ]\>"  display
-syn match stataFloat     "\.\d\+\%([eE][+-]\=\d\+\)\=[jJ]\=\>"      display
-syn match stataFloat     "\<\d\+[eE][+-]\=\d\+[jJ]\=\>"             display
-syn match stataFloat     "\<\d\+\.\d*\%([eE][+-]\=\d\+\)\=[jJ]\=\>" display
+syn match stataNumber    "\<-\?\d\>"        display
+syn match stataNumber    "\<-\?[0-9]\d\+\>" display
+syn match stataNumber    "\<-\?\d\+[jJ]\>"  display
+syn match stataFloat     "-\?\.\d\+\%([eE][+-]\=\d\+\)\=[jJ]\=\>"      display
+syn match stataFloat     "\<-\?\d\+[eE][+-]\=\d\+[jJ]\=\>"             display
+syn match stataFloat     "\<-\?\d\+\.\d*\%([eE][+-]\=\d\+\)\=[jJ]\=\>" display
 syn match stataBinNumber "\<0[bB][01]\+[lL]\=\>" display
 syn match stataBinNumber "\<0[bB][01]\+\>"       display
 syn match stataHexNumber "\<0[xX]\x\+[lL]\=\>"   display
