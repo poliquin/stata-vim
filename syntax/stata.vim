@@ -3,7 +3,7 @@
 " Maintainer: Chris Poliquin <chrispoliquin@gmail.com>
 " Note: Based on the original by Jeff Pitblado <jpitblado@stata.com>
 " Last Change: 2025-12-10
-" Version: 0.6.40
+" Version: 0.6.41
 
 
 " Preamble {{{
@@ -348,8 +348,15 @@ syn keyword stataCommand sret[urn]
 syn keyword stataCommand ssc
 syn keyword stataCommand stack
 syn keyword stataCommand statsby
+syn keyword stataCommand stcox
 syn keyword stataCommand stem
 syn keyword stataCommand stset
+syn keyword stataCommand sts
+syn keyword stataCommand sts graph
+syn keyword stataCommand sts l[ist]
+syn keyword stataCommand sts t[est]
+syn keyword stataCommand sts gen[erate]
+syn keyword stataCommand stsum
 syn keyword stataCommand su[mmarize]
 syn keyword stataCommand suest
 syn keyword stataCommand svmat
